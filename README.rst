@@ -51,11 +51,11 @@ Simple example usage:
     # compute the bound --
     DFlb, _ = compute_pinched_DF_lower_bound(dskrpxc, lko, k=2)
 
-    variance4 = 4 * daH.variance()
+    F_Alice = 4 * daH.variance()
 
-    FBob = variance4 - DFlb
+    F_Bob_ub = F_Alice - DFlb
 
-    print(f"Upper bound on Bob's quantum Fisher information w.r.t. time = {FBob:.4g}")
+    print(f"Upper bound on Bob's quantum Fisher information w.r.t. time = {F_Bob_ub:.4g}")
 
 
 
