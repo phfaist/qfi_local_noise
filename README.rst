@@ -8,6 +8,12 @@ Simple example usage:
 
 .. code-block:: python
     
+    import numpy as np
+    import numpy.linalg as npl
+    import scipy as sp
+    import scipy.linalg as spl
+    import qutip
+    
     from qfi_local_noise import (
         DitstringSuperpositionKet,
         DitstringActionHamiltonian,
