@@ -1,0 +1,19 @@
+#
+# Travis CI config file
+#
+
+language: python
+
+python:
+  - "3.8"
+  - "3.9"
+
+before_install:
+  - pip install poetry
+install:
+  - poetry install
+
+# command to run tests
+script:
+  - poetry run pytest
+
